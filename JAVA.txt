@@ -1,0 +1,38 @@
+1-)
+public class Services{
+    static services = new Vector<Service>();
+
+    public addSercice(int id, String libelle){
+        Service service = new Services();
+        service.id = id;
+        service.libelle = libelle;
+        services.add(service);
+    }
+2-)
+    public listService(){
+        for(Service s: services){
+            Systeme.out.println("Service: "+s.id+", libelle: "+s.libelle);
+        }
+    }
+6-)
+    public quiter(){
+        exit(-1);
+    }
+}
+3-)
+public class Employe{
+    static employes = new Vector<Employe>();
+
+    public addSercice(int id, String nom){
+        employe employe = new Employe();
+        employe.id = id;
+        employe.nom = nom;
+        Employe.add(employe);
+    }
+4-)
+    public listeJournallier(){
+        for(Journalier s: journaliers ){
+            Systeme.out.println("Journalier: "+s.id+", nom: "+s.nom);
+        }
+    }
+}
